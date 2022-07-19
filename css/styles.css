@@ -1,0 +1,613 @@
+@font-face {
+    font-family: blackie;
+    src: url("../fonts/logofont.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.first-child {
+    padding-left: 0px;
+}
+
+.middle-child {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* Estilos do cabeçalho */
+
+.header {
+    width: 100%;
+    height: 4rem;
+    top: 0;
+    position: fixed;
+    background: #000;
+    opacity: 0.7;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    font-family: "blackie";
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.ac-mn-area {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ac-mn-header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ac-mn-header a {
+    color: white;
+    font-family: "Helvetica";
+    font-size: 1rem;
+    display: flex;
+    transition: 200ms ease;
+}
+
+.ac-mn-header {
+    text-align: center;
+}
+
+.ac-mn-item {
+    margin: 2rem;
+    font-size: 1.25rem;
+}
+
+.ac-mn-item a:hover {
+    color: gray;
+}
+
+.mobile-ac-mn {
+    display: none;
+}
+
+.mobile-ac-mn-list {
+    display: none;
+}
+
+
+/* Estilos da area total do site */
+
+.banner {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+
+#bg-video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.bn-text {
+    position: absolute;
+    color: white;
+    z-index: 998;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bn-text h2 {
+    font-family: "Blackie";
+    font-size: 8rem;
+    font-weight: 400;
+    text-shadow: 5px 5px 8px black;
+    color: #e8f5e9;
+    text-align: center;
+}
+
+.bn-text h3 {
+    font-family: "Helvetica";
+    font-size: 1.5em;
+    font-weight: 200;
+    letter-spacing: -11px;
+    text-shadow: 3px 3px 8px black;
+}
+
+.bn-lower-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bn-lower-buttons a {
+    font-family: "Helvetica";
+    background: #00e676;
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-shadow: 1pt 1pt 2pt #159b5a;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem 3rem;
+    margin: 0 .25rem;
+    transition: 100ms ease;
+}
+
+.bn-lower-buttons a:hover {
+    box-shadow: inset 0 0 4pt .0625pt  #000;
+}
+
+.banner-item {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.content {
+    width: 100%;
+    float: left;
+    overflow: auto;
+}
+
+.cnt-news {
+    width: 60%;
+}
+
+.content-nomargin {
+    margin-bottom: -5px;
+}
+
+.main {
+    width: 100%;
+}
+
+.news h2 {
+    font-size: 2em !important;
+}
+
+.news h3 {
+    font-size: 1.7em !important;
+}
+
+.news p {
+    font-size: 1em;
+    font-family: "Helvetica";
+    margin: 2%;
+    text-align: justify;
+}
+
+.news-img {
+    width: 60%;
+    margin: auto;
+}
+
+.news-img img {
+    width: 100%;
+}
+
+.main-title {
+    text-align: center;
+    font-family: "Helvetica";
+    font-size: 3em;
+    margin: 10px 0px 50px 0px;
+}
+
+.news-title {
+    text-align: center;
+    font-family: "Helvetica";
+    font-size: 4rem;
+    margin-top: 4rem;
+    border-bottom: 2px solid black;
+    padding-bottom: 4rem;
+    color: rgb(24, 24, 24);
+}
+
+.main-vertical-thumb {
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid black;
+    margin-top: 4rem;
+}
+
+.main-vertical-thumb h2 {
+    font-family: "Helvetica";
+    font-size: 3em;
+    padding-bottom: 50px;
+    color: rgb(24, 24, 24);
+}
+
+.main-vertical-thumb h3 {
+    font-family: "Helvetica";
+    font-size: 2em;
+    margin-top: -50px;
+    padding-bottom: 50px;
+    color: rgb(46, 46, 46);
+}
+
+.main-vertical-thumb p {
+    font-family: "Helvetica";
+    font-size: 1.2em;
+    margin: 0px 100px 0px 100px;
+    text-align: justify;
+}
+
+.main-vertical-thumb a {
+    color: black;
+}
+
+.main-vertical-thumb img {
+    margin: 50px 100px 50px 100px;
+    width: 50%;
+}
+
+.main-horizontal-thumb {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.upper-ht {
+    width: 100%;
+    display: block;
+}
+
+.ht-img {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.ht-img img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ht-title {
+    width: 75%;
+    float: right;
+    text-align: center;
+}
+
+.ht-title h2 {
+    font-family: "Helvetica";
+    font-size: 2em;
+    padding-bottom: 30px;
+    color: black;
+    margin-top: 5%;
+}
+
+.ht-title h3 {
+    font-family: "Helvetica";
+    font-size: 1.7em;
+    margin-top: -30px;
+    padding-bottom: 50px;
+    color: black;
+}
+
+.lower-ht {
+    width: 100%;
+    float: left;
+    margin-bottom: 5%;
+}
+
+.lower-ht p {
+    margin-left: 2%;
+    margin-top: 1%;
+    font-family: "Helvetica";
+    font-size: 1em;
+    text-align: center;
+    color: black;
+}
+
+.main-img-square img {
+    width: 30%;
+}
+
+.main-5 {
+    border-bottom: 0px white solid;
+}
+
+.five-thumb {
+    width: 100%;
+    float: left;
+    margin-bottom: 4rem
+}
+
+.five-thumb img {
+    width: 15%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.five-thumb img:hover {
+    opacity: 0.8;
+    transition: opacity 1s;
+}
+
+.gap-photo {
+    width: 100%;
+}
+
+.gap-photo img {
+    margin-top: 3%;
+    width: 100%;
+}
+
+
+/* Estilos do rodapé */
+
+.footer {
+    width: 100%;
+    position: relative;
+    padding-top: -250px;
+    border-top: 1px solid black;
+    clear: both;
+    background: #212121;
+}
+
+.upper-footer {
+    background: white;
+    height: 200px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    background: #212121;
+}
+
+.uf-3rd {
+    width: 33.332%;
+    height: 100%;
+    float: left;
+}
+
+.lf-list img {
+    transition: 200ms ease;
+}
+
+.uf-list,
+.uf-list a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: "Helvetica";
+    font-size: 1rem;
+    color: #EEEEEE;
+    text-shadow: 1px 1px black;
+}
+
+.uf-list li {
+    margin-bottom: .25rem;
+}
+
+.lf-list img {
+    filter: grayscale(1);
+}
+
+.lf-list img:hover {
+    filter: grayscale(0);
+}
+
+.uf-list a:hover {
+    color: white;
+}
+
+.uf-list h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: "Blackie";
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 1pt;
+    text-shadow: 2pt 2pt 8pt black;
+    color: #F5F5F5;
+}
+
+.lower-footer {
+    background: white;
+    height: 50px;
+    width: 100%;
+    padding-bottom: 15px;
+    background: #212121;
+}
+
+.lf-list {
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.lf-list li {
+    padding-left: 2.5%;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+}
+
+.lf-list img {
+    width: 35px;
+}
+
+.end {
+    width: 100%;
+    text-align: center;
+    font-family: "Helvetica";
+    font-size: 0.5em;
+    font-weight: 200;
+    color: #BDBDBD;
+    letter-spacing: 1pt;
+    background: #212121;
+}
+
+
+/* Versão para tela merda */
+
+@media screen and (max-width: 768px) {
+    #bg-video {
+        display: none;
+    }
+    .banner {
+        height: 40%;
+        background-image: url(../img/wallpaper768.jpg);
+        background-size: 100% 100%;
+    }
+    .container {
+        width: 100%;
+    }
+    .bn-text h3 {
+        display: none;
+    }
+    .cnt-news {
+        width: 80%;
+    }
+}
+
+
+/* Versão para mobile */
+
+@media screen and (max-width: 768px) {
+    .mobile-ac-mn {
+        display: block;
+        height: 40px;
+        width: 100%;
+    }
+    .mobile-logo {
+        height: 40px;
+        float: left;
+        color: white;
+        line-height: 45px;
+        text-align: center;
+        margin-left: 2%;
+        font-family: "blackie";
+        font-size: 1.2em;
+    }
+    .mobile-logo:hover {
+        color: gray;
+    }
+    .burger-icon {
+        height: 40px;
+        width: 40px;
+        float: right;
+        margin-right: 2%;
+        filter: grayscale(1);
+    }
+    .burger-icon:hover {
+        filter: grayscale(0);
+    }
+    .mobile-ac-mn img {
+        width: 100%;
+    }
+    .mobile-ac-mn-list {
+        display: block;
+    }
+    .burger-toggle {
+        cursor: pointer;
+    }
+    nav ul {
+        width: 100%;
+        background: black;
+        text-align: center;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.15s ease-out;
+    }
+    .mobile-ac-mn-list ul.open {
+        max-height: 500px;
+        transition: max-height 0.25s ease-in;
+    }
+    .mobile-ac-mn-list li {
+        padding: 2% 3% 2% 3%;
+    }
+    .mobile-ac-mn-list a {
+        color: white;
+        display: block;
+        font-family: "Helvetica";
+    }
+    .mobile-ac-mn-list a:hover {
+        color: gray;
+    }
+    .header {
+        height: 40px;
+    }
+    .banner {
+        height: 25%;
+    }
+    .bn-text h2 {
+        font-size: 3em;
+    }
+    .bn-text h3 {
+        display: none;
+    }
+    .bn-lower-buttons {
+        display: none;
+    }
+    .cnt-news {
+        width: 100%;
+    }
+    .main-title {
+        font-size: 2em;
+    }
+    .main-vertical-thumb h2 {
+        font-size: 1.2em;
+    }
+    .main-vertical-thumb h3 {
+        font-size: 1em;
+    }
+    .main-vertical-thumb p {
+        font-size: 0.8em;
+    }
+    .lower-ht p {
+        font-size: 1em;
+    }
+    .ht-title h2 {
+        font-size: 1.5em;
+    }
+    .ht-title h3 {
+        font-size: 1.3em;
+    }
+    .mobile-noexec {
+        display: none;
+    }
+    .uf-3rd {
+        width: 50%;
+    }
+    .lf-list img {
+        width: 30px;
+    }
+    .ac-mn-area {
+        display: none;
+    }
+    .caralho {
+        display: block;
+    }
+}
